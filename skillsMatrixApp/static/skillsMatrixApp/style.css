@@ -1,0 +1,217 @@
+body {
+    background: white url("images/what-the-hex.png");
+}
+
+html, body {
+    /*margin: 0 !important;
+    height: 100% !important;*/
+    margin-bottom: 1.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Fira Sans', sans-serif !important;
+    /*font-size: xx-large !important;*/
+}
+
+.nav-link, .dropdown-item {
+    /*font-size: x-large;*/
+    font-weight: 600;
+}
+
+.sm-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #702082;
+    color: #ffffff;
+    text-align: right;
+    padding: 0.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    font-size: small;
+}
+
+.emp-td-data, .emp-tr-data, .emp-th-data,
+.emp-td, .emp-tr, .emp-th,
+.skills-td-data, .skills-tr-data, .skills-th-data,
+.skills-td, .skills-tr, .skills-th {
+    border: 1px solid black !important;
+    font-weight: 500 !important;
+    vertical-align: middle !important;
+}
+
+.emp-th, skills-th-data, .skills-th {
+    text-align: center;
+}
+
+.emp-thead {
+    text-align: center;
+}
+
+.table {
+    width: 99% !important;
+    margin: 0 auto !important;
+}
+
+.no-emp {
+    border: 1px solid;
+    margin: .5rem;
+    background: #ececec;
+    padding: 2rem;
+    text-align: center;
+}
+
+.no-skills {
+    padding: .5rem;
+    border: 1px solid;
+    margin: .5rem;
+    background: #efefef;
+    text-align: center;
+}
+
+.no-emp-lbl {
+    font-size: xx-large;
+    margin-top: -3rem;
+}
+
+.navbar {
+    margin-bottom: .5rem !important;
+}
+
+.body-tmp {
+    /*height: -webkit-fill-available;*/
+
+}
+
+.form-tmp {
+    border: 1px solid #cecece;
+    margin: .5rem;
+    padding: .5rem;
+    background: #ececec;
+    /* font-family: Open Sans, sans-serif; */
+    font-weight: 500;
+}
+
+.form-lbl, .form-field {
+    float: ;
+    display: -webkit-box;
+
+}
+
+.form-lbl > label {
+    text-align: right;: 3 rem;
+    /*margin-right: 1rem;*/
+    width: 9rem;
+    font-size: small !important;
+}
+
+.error {
+    color: #721c24;
+}
+
+.form-lbl {
+    font-size: small !important;
+}
+
+.sub {
+    background: #ececec;
+    border: 1px solid #cecece;
+    margin: .5rem;
+    padding: .5rem 0;
+}
+
+.no-data {
+    width: 200px;
+}
+
+.no-data-skills {
+    width: 50px;
+}
+
+.skills-th, .skills-td-dt {
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.emp-lbl, .skills-lbl {
+    margin: .25rem 0.50rem;
+    /*font-size: x-large;*/
+    font-weight: 500;
+}
+
+.emp-detail {
+    border: 1px solid black;
+    margin: .5rem;
+    font-weight: 500;
+}
+
+.emp-hdr {
+    background: #e6e6e6;
+    padding: 0.25rem 0.5rem 0;
+    border-bottom: 1px solid;
+}
+
+.table-sm td, .table-sm th {
+    padding: 0 .5rem !important;
+    font-size: small !important;
+}
+
+.navbar {
+    padding: 0 .5rem;
+}
+
+.dropdown-item {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.emp-body {
+    padding: 0.25rem 0.5rem 0.25rem;
+}
+
+.emp-title, .emp-text {
+    line-height: 1rem;
+}
+
+#id_role, #id_lastName, #id_firstName,
+#id_technology, #id_skillName, #id_lastModifiedByID, #id_description {
+    width: 20vw;
+}
+
+.update {
+    width: 15px;
+    margin: 3px;
+}
+
+.upd {
+    text-align: center;
+}
+
+.confirm-delete {
+    border: 1px solid #d9d9d9;
+    margin: .5rem;
+    background: #ececec;
+    padding: .5rem;
+    font-size: medium;
+    margin-bottom: -5px;
+}
+
+.delete-obj {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.skills, .emp {
+    background: white url("images/crossword.png");
+}
+
+.bg-dark {
+    background-color: #702082 !important;
+}
+
+.dropdown-menu {
+    right: 0 !important;
+    left: auto !important;
+}

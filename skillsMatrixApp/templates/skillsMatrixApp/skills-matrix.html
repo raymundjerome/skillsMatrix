@@ -1,0 +1,45 @@
+{% extends 'skillsMatrixApp/base.html' %}
+{% block title %}Skills Matrix{% endblock %}
+{% block skillsMatrix_active %}active{% endblock %}
+
+{% block body %}
+    <div>
+        {% if skillsMatrix %}
+            <table class="table table-striped  table-hover table-sm skills">
+                <thead class="thead-dark skills-thead">
+                <tr class="skills-tr">
+                    <th scope="col" class="skills-th">Employee</th>
+                    <th scope="col" class="skills-th">Skills</th>
+                    <th scope="col" class="skills-th">Proficiency</th>
+                    <th scope="col" class="skills-th">Level of Interest</th>
+                    <th scope="col" class="skills-th">Update</th>
+                    <th scope="col" class="skills-th">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for sM in skillsMatrix %}
+                    <tr class="skills-tr-data">
+                        <td class="skills-td-data">{{ sM.skillsMatrixEmployee }}</td>
+                        <td class="skills-td-data">{{ sM.skillsMatrixSkills }}</td>
+                        <td class="skills-td-data">{{ sM.proficiency }}</td>
+                        <td class="skills-td-data">{{ sM.levelOfInterest }}</td>
+                        <td class="skills-td-data upd"><a
+                                href="{% url 'skillsMatrixApp:skills-matrix-update' sM.id %}"><img class="update"
+                                                                                                src="/static/skillsMatrixApp/images/icon-changelink.svg"></a>
+                        </td>
+                        <td class="skills-td-data upd"><a
+                                href="{% url 'skillsMatrixApp:skills-matrix-delete' sM.id %}"><img class="update"
+                                                                                                src="/static/skillsMatrixApp/images/icon-deletelink.svg"></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="no-skills">
+                <span><img class="no-data-skills" src="/static/skillsMatrixApp/images/database.png"></span>
+                <span class="no-skills-lbl">No Skills Data Available</span>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends 'skillsMatrixApp/base.html' %}
+{% block dashboard_active %}active{% endblock %}
+
+{% block body %}
+    <div class="emp-lbl">Employees</div>
+    <div>
+        {% if all_employee %}
+            <table class="table table-striped  table-hover table-sm emp">
+                <thead class="thead-dark emp-thead">
+                <tr class="emp-tr">
+                    <th scope="col" class="emp-th">ID</th>
+                    <th scope="col" class="emp-th">Employee Name - Role</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for emp in all_employee %}
+                    <tr class="emp-tr-data">
+                        <td class="emp-td-data">{{ emp.id }}</td>
+                        <td class="emp-td-data"><a
+                                href="{% url 'skillsMatrixApp:detail' emp.id %}">{{ emp.firstName }} {{ emp.lastName }}
+                            - {{ emp.role }}</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="no-emp">
+                <div><img class="no-data" src="/static/skillsMatrixApp/images/database.png"></div>
+                <div class="no-emp-lbl"><br>No Data Available</div>
+            </div>
+        {% endif %}
+    </div>
+
+    <br/>
+    <div class="skills-lbl">Skills</div>
+    <div>
+        {% if all_skills %}
+            <table class="table table-striped  table-hover table-sm skills">
+                <thead class="thead-dark skills-thead">
+                <tr class="skills-tr">
+                    <th scope="col" class="skills-th">ID</th>
+                    <th scope="col" class="skills-th">Skill Name</th>
+                    <th scope="col" class="skills-th">Technology</th>
+                    <th scope="col" class="skills-th">Description</th>
+                    <th scope="col" class="skills-th">Date Added</th>
+                    <th scope="col" class="skills-th">Date Modified</th>
+                    <th scope="col" class="skills-th">Last Modified By</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for skills in all_skills %}
+                    <tr class="skills-tr-data">
+                        <td class="skills-td-dt skills-td-data">{{ skills.id }}</td>
+                        <td class="skills-td-dt skills-td-data">{{ skills.skillName }}</td>
+                        <td class="skills-td-dt skills-td-data">{{ skills.technology }}</td>
+                        <td class="skills-td-data">{{ skills.description }}</td>
+                        <td class="skills-td-data">{{ skills.dateAdded }}</td>
+                        <td class="skills-td-data">{{ skills.dateModified }}</td>
+                        <td class="skills-td-data">{{ skills.lastModifiedByID }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="no-emp">
+                <div><img class="no-data" src="/static/skillsMatrixApp/images/database.png"></div>
+                <div class="no-emp-lbl"><br>No Data Available</div>
+            </div>
+        {% endif %}
+    </div>
+
+    <br/>
+    <div class="skills-lbl">Skills Matrix</div>
+    <div>
+        {% if all_skillsMatrix %}
+            <table class="table table-striped  table-hover table-sm skills">
+                <thead class="thead-dark skills-thead">
+                <tr class="skills-tr">
+                    <th scope="col" class="skills-th">Employee</th>
+                    <th scope="col" class="skills-th">Skill</th>
+                    <th scope="col" class="skills-th">Proficiency</th>
+                    <th scope="col" class="skills-th">Level of Interest</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for skillsMatrix in all_skillsMatrix %}
+                    <tr class="skills-tr-data">
+                        <td class="skills-td-dt skills-td-data">{{ skillsMatrix.skillsMatrixEmployee }}</td>
+                        <td class="skills-td-dt skills-td-data">{{ skillsMatrix.skillsMatrixSkills }}</td>
+                        <td class="skills-td-dt skills-td-data">{{ skillsMatrix.proficiency }}</td>
+                        <td class="skills-td-data">{{ skillsMatrix.levelOfInterest }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+        <div class="no-skills">
+            <span><img class="no-data-skills" src="/static/skillsMatrixApp/images/database.png"></span>
+            <span class="no-skills-lbl">No Skills Matrix Data Available</span>
+        </div>
+        {% endif %}
+    </div>
+{% endblock %}

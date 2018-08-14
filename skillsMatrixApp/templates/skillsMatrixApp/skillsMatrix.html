@@ -1,0 +1,13 @@
+{% extends 'skillsMatrixApp/base.html' %}
+{% block title %}Employee Details{% endblock %}
+
+{% block body %}
+    {{ all_employee.id }} - {{ all_employee.firstName }} {{ all_employee.lastName }} -  {{ all_employee.role }}
+    <br>
+    {% for all_sm in all_employee.skillsmatrix_set.all %}
+    <br>
+    <br>{{ all_sm.skillsMatrixSkills }}
+    <br>{{ all_sm.proficiency }}
+    <br>{{ all_sm.levelOfInterest }}
+    {% endfor %}
+{% endblock %}

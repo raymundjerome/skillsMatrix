@@ -1,0 +1,14 @@
+{% extends 'skillsMatrixApp/base.html' %}
+
+{% block body %}
+    {% if all_employee %}
+        <ul>
+            {% for emp in all_employee %}
+                <li><a href="{% url 'skillsMatrixApp:skillsMatrixView' emp.id %}"> {{ emp.firstName }} {{ emp.lastName }} -  {{ emp.role }}</a> </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h3>no emp</h3>
+    {% endif %}
+{% endblock %}
+
