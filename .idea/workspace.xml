@@ -1,16 +1,296 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b8e49254-9f35-410b-a376-7d25eea4ac64" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillsMatrixApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/skillsMatrixApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillsMatrixApp/static/skillsMatrixApp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/skillsMatrixApp/static/skillsMatrixApp/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/employee-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/employee-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/employee_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/employee_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills-matrix.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills-matrix.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skillsmatrix_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skillsmatrix_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillsMatrixApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/skillsMatrixApp/views.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="2146089269">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="3" />
+          <entry key="html" value="18" />
+          <entry key="py" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="18" />
+          <entry key="Python" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="308" />
+          <entry key="html" value="298" />
+          <entry key="py" value="211" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="308" />
+          <entry key="HTML" value="298" />
+          <entry key="Python" value="211" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/employee_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/form-template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skillsMatrixApp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="147" selection-start-line="147" selection-end-line="163" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skillsMatrixApp/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skillsMatrixApp/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="683">
+              <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skillsMatrixApp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.paginate_button:hover</find>
+      <find>font-weight</find>
+      <find>font-size</find>
+      <find>.dataTables_wrapper .dataTables_paginate .paginate_button</find>
+      <find>example</find>
+      <find>.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active</find>
+      <find>.emp-td-data</find>
+      <find>table.dataTable.no-footer</find>
+      <find>table</find>
+      <find>error</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>employee</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/skillsMatrixApp/fdasfsad.html" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/base.html" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/static/skillsMatrixApp/jquery.dataTables.min.css" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/index.html" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/form-template.html" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/employee-list.html" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/employee_form.html" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills_form.html" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skillsmatrix_form.html" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills-list.html" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills-matrix.html" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/static/skillsMatrixApp/style.css" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/models.py" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/forms.py" />
+        <option value="$PROJECT_DIR$/skillsMatrixApp/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1561" />
-    <option name="y" value="-18" />
-    <option name="width" value="1680" />
+    <option name="x" value="2258" />
+    <option name="y" value="-6" />
+    <option name="width" value="1477" />
     <option name="height" value="1016" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="skillsMatrix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skillsMatrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skillsMatrix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skillsMatrix" type="462c0819:PsiDirectoryNode" />
+              <item name="skillsMatrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skillsMatrix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skillsMatrix" type="462c0819:PsiDirectoryNode" />
+              <item name="skillsMatrixApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skillsMatrix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skillsMatrix" type="462c0819:PsiDirectoryNode" />
+              <item name="skillsMatrixApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skillsMatrix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skillsMatrix" type="462c0819:PsiDirectoryNode" />
+              <item name="skillsMatrixApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="skillsMatrixApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skillsMatrix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skillsMatrix" type="462c0819:PsiDirectoryNode" />
+              <item name="skillsMatrixApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="skillsMatrixApp" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skillsMatrix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skillsMatrix" type="462c0819:PsiDirectoryNode" />
+              <item name="skillsMatrixApp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skillsMatrix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skillsMatrix" type="462c0819:PsiDirectoryNode" />
+              <item name="skillsMatrixApp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="skillsMatrixApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/django-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="skillsMatrix" type="Python.DjangoServer" factoryName="Django server">
@@ -36,5 +316,238 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8e49254-9f35-410b-a376-7d25eea4ac64" name="Default Changelist" comment="" />
+      <created>1534259744534</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534259744534</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1916" y="-4" width="1928" height="1088" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19539614" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49938574" weight="0.32930845" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006142" side_tool="true" weight="0.32930845" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5006142" side_tool="true" weight="0.32930845" />
+      <window_info anchor="bottom" id="Python Console" order="5" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49938574" weight="0.32930845" />
+      <window_info anchor="right" id="R Graphics" order="0" />
+      <window_info anchor="right" id="R Packages" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/fdasfsad.html" />
+    <entry file="file://$PROJECT_DIR$/skillsMatrix/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/employee.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/static/skillsMatrixApp/jquery.dataTables.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="327" column="18" selection-start-line="327" selection-start-column="18" selection-end-line="327" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="86" column="15" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills_confirm_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skillsmatrix_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="95" column="18" lean-forward="true" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/employee-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skillsMatrix.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills-matrix.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="84" lean-forward="true" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/static/skillsMatrixApp/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrix/settings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/employee_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/form-template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="147" selection-start-line="147" selection-end-line="163" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillsMatrixApp/templates/skillsMatrixApp/skills_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

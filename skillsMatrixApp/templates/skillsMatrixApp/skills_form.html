@@ -6,14 +6,15 @@
     {% if error_message %}
         <p><strong>{{ error_message }}</strong></p>
     {% endif %}
-        <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-            {% include 'skillsMatrixApp/form-template.html' %}
-                <div class="form-group sub">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" formnovalidate name="cancel" class="btn btn-danger">Cancel</button>
-                        <button type="submit" formnovalidate class="btn btn-success">Submit</button>
-                    </div>
-                </div>
-        </form>
+    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% include 'skillsMatrixApp/form-template.html' %}
+        <div class="form-group sub">
+            <div class="col-sm" style="text-align: right">
+                <button type="submit" formnovalidate class="btn btn-info">Save</button>
+                <button type="submit" formnovalidate name="another" class="btn btn-info">Save and add another</button>
+                <button type="submit" formnovalidate name="cancel" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+    </form>
 {% endblock %}

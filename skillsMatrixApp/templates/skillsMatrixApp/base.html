@@ -2,67 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Skills Matrix v0.2{% endblock %}</title>
+    <title>{% block title %}Skills Matrix v0.3{% endblock %}</title>
 
     {% load staticfiles %}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'skillsMatrixApp/jquery.dataTables.min.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'skillsMatrixApp/style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900" rel="stylesheet">
+
+
 </head>
 
 <body>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="{% url 'skillsMatrixApp:index' %}">Skills Matrix v0.2</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="{% url 'skillsMatrixApp:index' %}">Skills Matrix v0.3</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item {% block dashboard_active %}{% endblock %}">
-            <a class="nav-link" href="{% url 'skillsMatrixApp:index' %}">Dashboard<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown {% block employee_active %}{% endblock %}">
-            <a class="nav-link mx-2 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{% url 'skillsMatrixApp:index' %}" >Employee</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'skillsMatrixApp:employee-add' %}">Add Employee</a>
-                <a class="dropdown-item" href="{% url 'skillsMatrixApp:employee-list' %}">Update/Delete Employee</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="#">Employee Details</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown {% block skills_active %}{% endblock %}">
-            <a class="nav-link mx-2 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{% url 'skillsMatrixApp:index' %}" >Skills</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'skillsMatrixApp:skills-add' %}">Add Skills</a>
-                <a class="dropdown-item" href="{% url 'skillsMatrixApp:skills-list' %}">Update/Delete Skills</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown {% block skillsMatrix_active %}{% endblock %}">
-            <a class="nav-link mx-2 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{% url 'skillsMatrixApp:index' %}" >Skills Matrix</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'skillsMatrixApp:skills-matrix-add' %}">Add to Skills Matrix</a>
-                <a class="dropdown-item" href="{% url 'skillsMatrixApp:skills-matrix' %}">Update/Delete Skills Matrix</a>
-            </div>
-          </li>
+            <li class="nav-item {% block dashboard_active %}{% endblock %}">
+                <a class="nav-link" href="{% url 'skillsMatrixApp:index' %}">Dashboard<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown {% block employee_active %}{% endblock %}">
+                <a class="nav-link mx-2 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false" href="{% url 'skillsMatrixApp:index' %}">Employee</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'skillsMatrixApp:employee-add' %}">Add Employee</a>
+                    <a class="dropdown-item" href="{% url 'skillsMatrixApp:employee-list' %}">Update/Delete Employee</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item disabled" href="#">Employee Details</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown {% block skills_active %}{% endblock %}">
+                <a class="nav-link mx-2 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false" href="{% url 'skillsMatrixApp:index' %}">Skills</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'skillsMatrixApp:skills-add' %}">Add Skills</a>
+                    <a class="dropdown-item" href="{% url 'skillsMatrixApp:skills-list' %}">Update/Delete Skills</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown {% block skillsMatrix_active %}{% endblock %}">
+                <a class="nav-link mx-2 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false" href="{% url 'skillsMatrixApp:index' %}">Skills Matrix</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'skillsMatrixApp:skills-matrix-add' %}">Add to Skills
+                        Matrix</a>
+                    <a class="dropdown-item" href="{% url 'skillsMatrixApp:skills-matrix' %}">Update/Delete Skills
+                        Matrix</a>
+                </div>
+            </li>
         </ul>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <div class="body-tmp">
+<div class="body-tmp">
     {% block body %}
     {% endblock %}
-    </div>
+</div>
 
 </body>
 
-    <div class="sm-footer">
-        <span class="">© 2018 Willis Towers Watson. All rights reserved.</span>
-    </div>
+<div class="sm-footer">
+    <span class="">© 2018 Willis Towers Watson. All rights reserved.</span>
+</div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
+    {% block js %}
+    {% endblock %}
 </html>

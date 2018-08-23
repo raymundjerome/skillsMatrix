@@ -37,8 +37,8 @@ html, body {
 .emp-td, .emp-tr, .emp-th,
 .skills-td-data, .skills-tr-data, .skills-th-data,
 .skills-td, .skills-tr, .skills-th {
-    border: 1px solid black !important;
-    font-weight: 500 !important;
+    border: 0px solid black !important;
+    font-weight: normal !important;
     vertical-align: middle !important;
 }
 
@@ -53,6 +53,7 @@ html, body {
 .table {
     width: 99% !important;
     margin: 0 auto !important;
+    border: 1px solid black;
 }
 
 .no-emp {
@@ -95,7 +96,7 @@ html, body {
 }
 
 .form-lbl, .form-field {
-    float: ;
+    /*float: ;*/
     display: -webkit-box;
 
 }
@@ -109,6 +110,10 @@ html, body {
 
 .error {
     color: #721c24;
+}
+
+.errorlist {
+    margin-bottom: 0 !important;
 }
 
 .form-lbl {
@@ -214,4 +219,81 @@ html, body {
 .dropdown-menu {
     right: 0 !important;
     left: auto !important;
+}
+
+#employee_length, #skills_length, #sm_length {
+    font-size: x-small;
+    font-family: inherit;
+    font-weight: 500;
+    margin: 0 0.5rem;
+}
+
+#employee_filter, #employee_info, #employee_paginate, #skills_filter, #skills_info, #skills_paginate, #sm_filter, #sm_info, #sm_paginate {
+    font-size: x-small;
+    font-family: inherit;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+#employee_info, #skills_info, #sm_info {
+    padding-top: 0rem;
+}
+
+#employee_filter > label > input, #skills_filter > label > input, #sm_filter > label > input {
+    -webkit-appearance: searchfield !important;
+}
+
+label {
+    margin-bottom: 0 !important;
+}
+
+#employee_paginate > .disabled {
+}
+
+.paginate_button {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border: none !important;
+    background: none !important;
+}
+
+.paginate_button:active {
+    box-shadow: none !important;
+}
+
+.paginate_button.current {
+    text-decoration: underline !important;
+
+}
+
+.table .thead-dark th {
+    background-color: #9a9a9a !important;
+}
+
+table.dataTable.no-footer {
+    /*border-bottom: 0px solid #111 !important;*/
+}
+
+input {
+    line-height: 0 !important;
+    overflow: hidden;
+    margin: 0.05rem;
+}
+
+ul.messagelist li {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 10px 10px 10px 65px;
+    margin: 0 0 10px 0;
+    background: #dfd url("images/icon-yes.svg") 40px 12px no-repeat;
+    background-size: 16px auto;
+    color: #333;
+
+    margin-top: -0.5rem;
+}
+
+.messagelist {
+    padding-left: 0;
 }

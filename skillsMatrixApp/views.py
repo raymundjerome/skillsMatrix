@@ -4,6 +4,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic.base import TemplateView
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 class IndexView(TemplateView):
@@ -35,15 +36,23 @@ class employeeList(generic.ListView):
         return employee.objects.all()
 
 
-class employeeCreate(CreateView):
+class employeeCreate(SuccessMessageMixin, CreateView):
     model = employee
     fields = ['firstName', 'lastName', 'role']
+
+    success_url = reverse_lazy('skillsMatrixApp:employee-list')
+    success_message = "Employee added successfully."
 
     def post(self, request, *args, **kwargs):
         if "cancel" in request.POST:
             return HttpResponseRedirect(reverse('skillsMatrixApp:index'))
-        else:
-            return super(employeeCreate, self).post(request, *args, **kwargs)
+        return super(employeeCreate, self).post(request, *args, **kwargs)
+
+    def get_success_url(self):
+        if "another" in self.request.POST:
+            return reverse('skillsMatrixApp:employee-add')
+        # else return the default `success_url`
+        return super(employeeCreate, self).get_success_url()
 
 
 class employeeUpdate(UpdateView):
@@ -59,6 +68,7 @@ class employeeUpdate(UpdateView):
             return HttpResponseRedirect(url)
         else:
             return super(employeeUpdate, self).post(request, *args, **kwargs)
+
 
 class employeeDelete(DeleteView):
     model = employee
@@ -82,15 +92,23 @@ class skillsList(generic.ListView):
         return skills.objects.all()
 
 
-class skillsCreate(CreateView):
+class skillsCreate(SuccessMessageMixin, CreateView):
     model = skills
     fields = ['skillName', 'technology', 'description', 'lastModifiedByID']
+
+    success_url = reverse_lazy('skillsMatrixApp:skills-list')
+    success_message = "Skill added successfully."
 
     def post(self, request, *args, **kwargs):
         if "cancel" in request.POST:
             return HttpResponseRedirect(reverse('skillsMatrixApp:index'))
-        else:
-            return super(skillsCreate, self).post(request, *args, **kwargs)
+        return super(skillsCreate, self).post(request, *args, **kwargs)
+
+    def get_success_url(self):
+        if "another" in self.request.POST:
+            return reverse('skillsMatrixApp:skills-add')
+        # else return the default `success_url`
+        return super(skillsCreate, self).get_success_url()
 
 class skillsUpdate(UpdateView):
     model = skills
@@ -103,6 +121,7 @@ class skillsUpdate(UpdateView):
             return HttpResponseRedirect(url)
         else:
             return super(skillsUpdate, self).post(request, *args, **kwargs)
+
 
 class skillsDelete(DeleteView):
     model = skills
@@ -126,15 +145,24 @@ class skillsMatrixView(generic.ListView):
         return skillsMatrix.objects.all()
 
 
-class skillsMatrixCreate(CreateView):
+class skillsMatrixCreate(SuccessMessageMixin, CreateView):
     model = skillsMatrix
     fields = ['skillsMatrixEmployee', 'skillsMatrixSkills', 'proficiency', 'levelOfInterest']
+
+    success_url = reverse_lazy('skillsMatrixApp:skills-matrix')
+    success_message = "Skill associated to Employee successfully."
 
     def post(self, request, *args, **kwargs):
         if "cancel" in request.POST:
             return HttpResponseRedirect(reverse('skillsMatrixApp:index'))
-        else:
-            return super(skillsMatrixCreate, self).post(request, *args, **kwargs)
+        return super(skillsMatrixCreate, self).post(request, *args, **kwargs)
+
+    def get_success_url(self):
+        if "another" in self.request.POST:
+            return reverse('skillsMatrixApp:skills-matrix-add')
+        # else return the default `success_url`
+        return super(skillsMatrixCreate, self).get_success_url()
+
 
 
 class skillsMatrixUpdate(UpdateView):
@@ -148,6 +176,7 @@ class skillsMatrixUpdate(UpdateView):
             return HttpResponseRedirect(url)
         else:
             return super(skillsMatrixUpdate, self).post(request, *args, **kwargs)
+
 
 class skillsMatrixDelete(DeleteView):
     model = skillsMatrix
